@@ -39,7 +39,7 @@ exports.index = function (req, res){
     if (err) return res.render('500');
     Article.count().exec(function (err, count) {
       res.render('articles/index', {
-        title: 'Articles',
+        title: 'PV statistics',
         articles: articles,
         page: page + 1,
         pages: Math.ceil(count / perPage)
