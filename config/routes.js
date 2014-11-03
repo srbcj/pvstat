@@ -85,29 +85,29 @@ module.exports = function (app, passport) {
       failureRedirect: '/login'
     }), users.authCallback);
 
-  app.param('userId', users.load);
+  // app.param('userId', users.load);
 
   // article routes
-  app.param('id', articles.load);
-  app.get('/articles', articles.index);
-  app.get('/articles/new', auth.requiresLogin, articles.new);
-  app.post('/articles', auth.requiresLogin, articles.create);
-  app.get('/articles/:id', articles.show);
-  app.get('/articles/:id/edit', articleAuth, articles.edit);
-  app.put('/articles/:id', articleAuth, articles.update);
-  app.delete('/articles/:id', articleAuth, articles.destroy);
+  // app.param('id', articles.load);
+  // app.get('/articles', articles.index);
+  // app.get('/articles/new', auth.requiresLogin, articles.new);
+  // app.post('/articles', auth.requiresLogin, articles.create);
+  // app.get('/articles/:id', articles.show);
+  // app.get('/articles/:id/edit', articleAuth, articles.edit);
+  // app.put('/articles/:id', articleAuth, articles.update);
+  // app.delete('/articles/:id', articleAuth, articles.destroy);
 
   // home route
   app.get('/', articles.index);
 
   // comment routes
-  app.param('commentId', comments.load);
-  app.post('/articles/:id/comments', auth.requiresLogin, comments.create);
-  app.get('/articles/:id/comments', auth.requiresLogin, comments.create);
-  app.delete('/articles/:id/comments/:commentId', commentAuth, comments.destroy);
+  // app.param('commentId', comments.load);
+  // app.post('/articles/:id/comments', auth.requiresLogin, comments.create);
+  // app.get('/articles/:id/comments', auth.requiresLogin, comments.create);
+  // app.delete('/articles/:id/comments/:commentId', commentAuth, comments.destroy);
 
-  // tag routes
-  app.get('/tags/:tag', tags.index);
+  // // tag routes
+  // app.get('/tags/:tag', tags.index);
 
 
   /**
