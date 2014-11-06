@@ -18,66 +18,26 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>2014-10-31</td>
-          <td>1295580</td>
-          <td>156994</td>
-          <td>130848</td>
-          <td>446639</td>
-          <td>31947</td>
-          <td>416579</td>
-          <td>213784</td>
-          <td>10279</td>
-          <td>34994</td>
-          <td>2439</td>
-          <td>40654</td>
-          <td>26426</td>
-        </tr>
-        <tr>
-          <td>2014-11-01</td>
-          <td>2138091</td>
-          <td>240377</td>
-          <td>197008</td>
-          <td>656798</td>
-          <td>46920</td>
-          <td>608114</td>
-          <td>278278</td>
-          <td>16743</td>
-          <td>43674</td>
-          <td>3330</td>
-          <td>53761</td>
-          <td>40042</td>
-        </tr>
-        <tr>
-          <td>2014-11-02</td>
-          <td>1812567</td>
-          <td>237253</td>
-          <td>185802</td>
-          <td>643101</td>
-          <td>44027</td>
-          <td>526219</td>
-          <td>265578</td>
-          <td>15092</td>
-          <td>42294</td>
-          <td>3264</td>
-          <td>45737</td>
-          <td>37272</td>
-        </tr>
-        <tr>
-          <td>2014-11-03</td>
-          <td>1511799</td>
-          <td>195279</td>
-          <td>155393</td>
-          <td>563744</td>
-          <td>41514</td>
-          <td>558215</td>
-          <td>272908</td>
-          <td>11886</td>
-          <td>45920</td>
-          <td>3077</td>
-          <td>46227</td>
-          <td>51320</td>
-        </tr>
+      {% if (pvcount.length) %}
+        {% for pv in pvcount %}
+          <tr>
+            <!-- <td>{{ pv.createdAt.toISOString()|date('M d, Y  h:m a') }}</td> -->
+            <td>{{ pv.createdAt.toISOString()|date('Y-m-d') }}</td>
+            <td>{{ pv.pv_baidu_ss }}</td>
+            <td>{{ pv.pv_baidu_zd }}</td>
+            <td>{{ pv.pv_baidu_bk }}</td>
+            <td>{{ pv.pv_baidu_tb }}</td>
+            <td>{{ pv.pv_tencent_news }}</td>
+            <td>{{ pv.pv_ifeng_news }}</td>
+            <td>{{ pv.pv_sohu_news }}</td>
+            <td>{{ pv.pv_sogou_ss }}</td>
+            <td>{{ pv.pv_wangyi_news }}</td>
+            <td>{{ pv.pv_tianya_bbs }}</td>
+            <td>{{ pv.pv_tianya_3g }}</td>
+            <td>{{ pv.pv_tianya_m }}</td>
+          </tr>
+        {% endfor %}
+      {% endif %}
       </tbody>
     </table>
   </div> <!-- /container -->

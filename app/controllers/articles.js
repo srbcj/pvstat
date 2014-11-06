@@ -15,7 +15,7 @@ var extend = require('util')._extend;
 exports.index = function (req, res){
   var options = {};
 
-    /*PVcount.create( {"createdAt": "2014-09-19 16:16:16",
+    /*PVcount.create( {"createdAt": ISODate("2014-10-28T08:37:30.692Z"),
       "sites": [{"url":"pv_baidu_ss", "ck": 2},
       {"url":"pv_baidu_zd", "ck": 2},
       {"url":"pv_baidu_bk", "ck": 2},
@@ -49,7 +49,7 @@ exports.index = function (req, res){
 
     PVcount.count().exec(function (err, count) {
 
-      console.log('PVcount count : ' + count);
+      console.log('PVcount  : ' + pvcount[0].createdAt);
 
       res.render('articles/index', {
         title: 'PV statistics',

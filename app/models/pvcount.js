@@ -16,10 +16,18 @@ var Schema = mongoose.Schema;
  */
 
 var PVcountSchema = new Schema({
-  sites: [{
-    url: { type : String, default : '' },
-    ck: { type : Number }
-  }],
+  pv_baidu_ss: { type : Number },
+  pv_baidu_zd: { type : Number },
+  pv_baidu_bk: { type : Number },
+  pv_baidu_tb: { type : Number },
+  pv_tencent_news: { type : Number },
+  pv_ifeng_news: { type : Number },
+  pv_sohu_news: { type : Number },
+  pv_sogou_ss: { type : Number },
+  pv_wangyi_news: { type : Number },
+  pv_tianya_bbs: { type : Number },
+  pv_tianya_3g: { type : Number },
+  pv_tianya_m: { type : Number },
   createdAt : {type : Date, default : Date.now}
 });
 
