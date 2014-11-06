@@ -15,22 +15,19 @@ var extend = require('util')._extend;
 exports.index = function (req, res){
   var options = {};
 
-    /*PVcount.create( {"createdAt": ISODate("2014-10-28T08:37:30.692Z"),
-      "sites": [{"url":"pv_baidu_ss", "ck": 2},
-      {"url":"pv_baidu_zd", "ck": 2},
-      {"url":"pv_baidu_bk", "ck": 2},
-      {"url":"pv_baidu_tb", "ck": 2},
-      {"url":"pv_tencent_news", "ck": 2},
-      {"url":"pv_ifeng_news", "ck": 2},
-      {"url":"pv_sohu_news", "ck": 2},
-      {"url":"pv_sogou_ss", "ck": 2},
-      {"url":"pv_wangyi_news", "ck": 2},
-      {"url":"pv_tianya_bbs", "ck": 2},
-      {"url":"pv_tianya_3g", "ck": 2},
-      {"url":"pv_tianya_m", "ck": 2}
-      ]}, function (err, small) {
-      if (err) return console.log(err);
-    });*/
+    /*PVcount.create( {"createdAt":ISODate("2014-11-04T08:00:00.692Z"),
+"pv_baidu_ss":2,
+"pv_baidu_zd":21,
+"pv_baidu_bk":21,
+"pv_baidu_tb":21,
+"pv_tencent_news":2,
+"pv_ifeng_news":12,
+"pv_sohu_news":12,
+"pv_sogou_ss":12,
+"pv_wangyi_news":2,
+"pv_tianya_bbs":12,
+"pv_tianya_3g":12,
+"pv_tianya_m":2});*/
 
 /*    PVcount.find( function (err, pvcount){
       console.log('PVcount list : ' + pvcount.length);
