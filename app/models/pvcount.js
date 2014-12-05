@@ -26,24 +26,18 @@ var PVcountSchema = new Schema({
   pv_sogou_ss: { type : Number },
   pv_wangyi_news: { type : Number },
   pv_tianya_bbs: { type : Number },
-  pv_tianya_3g: { type : Number },
-  pv_tianya_m: { type : Number },
 
   cn3g: { type : Number },
-  pro3g: { type : Number },
   jd_products: { type : Number },
   jj_books: { type : Number },
   hupu_bbs: { type : Number },
-  hupu_news: { type : Number },
   bx_details: { type : Number },
   lx_bbs: { type : Number },
-  lx_chat: { type : Number },
-  lx_quanzi: { type : Number },
-  hq_mt: { type : Number },
   hq_wap: { type : Number },
   auho_news: { type : Number },
   lou19_news: { type : Number },
   tx_news: { type : Number },
+  pv_qiushi_bk: { type : Number },
   createdAt : {type : Date, default : Date.now}
 });
 
