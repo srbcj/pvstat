@@ -38,6 +38,29 @@ var PVcountSchema = new Schema({
   lou19_news: { type : Number },
   tx_news: { type : Number },
   pv_qiushi_bk: { type : Number },
+
+  pv_baidu_wk: { type : Number },
+  pv_baidu_img: { type : Number },
+  pv_baidu_news: { type : Number },
+  pv_baidu_tb: { type : Number },
+  pv_baidu_app: { type : Number },
+  pv_baidu_map: { type : Number },
+  pv_baidu_book: { type : Number },
+  pv_baidu_game: { type : Number },
+  pv_baidu_music: { type : Number },
+  pv_baidu_travel: { type : Number },
+  pv_baidu_hi: { type : Number },
+  pv_baidu_xc: { type : Number },
+
+  pv_tencent_info: { type : Number },
+  pv_tencent_q32: { type : Number },
+  pv_tencent_ebook: { type : Number },
+  pv_tencent_house60: { type : Number },
+  pv_tencent_family: { type : Number },
+  pv_tencent_lt: { type : Number },
+  pv_tencent_csg: { type : Number },
+  pv_tencent_wt: { type : Number },
+
   createdAt : {type : Date, default : Date.now}
 });
 
