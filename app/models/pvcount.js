@@ -42,7 +42,6 @@ var PVcountSchema = new Schema({
   pv_baidu_wk: { type : Number },
   pv_baidu_img: { type : Number },
   pv_baidu_news: { type : Number },
-  pv_baidu_tb: { type : Number },
   pv_baidu_app: { type : Number },
   pv_baidu_map: { type : Number },
   pv_baidu_book: { type : Number },
