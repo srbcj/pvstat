@@ -60,6 +60,24 @@ var PVcountSchema = new Schema({
   pv_tencent_csg: { type : Number },
   pv_tencent_wt: { type : Number },
 
+  pv_sogou_3g: { type : Number },
+  pv_sogou_m: { type : Number },
+  pv_sogou_123: { type : Number },
+  pv_sogou_map: { type : Number },
+  pv_sogou_mp3: { type : Number },
+  pv_sogou_k: { type : Number },
+  pv_sogou_xs: { type : Number },
+  pv_sogou_wx: { type : Number },
+  pv_sogou_news: { type : Number },
+  pv_sogou_app: { type : Number },
+  pv_sogou_as: { type : Number },
+  pv_sogou_music_host: { type : Number },
+  pv_sogou_ww: { type : Number },
+  pv_sogou_baike: { type : Number },
+  pv_sogou_path_music: { type : Number },
+  pv_sogou_app: { type : Number },
+  pv_sogou_pic: { type : Number },
+
   createdAt : {type : Date, default : Date.now}
 });
 
